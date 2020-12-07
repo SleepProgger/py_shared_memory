@@ -1,0 +1,4 @@
+include README
+include setup.py
+recursive-include . *.py *.c
+recursive-include clinic *.h
