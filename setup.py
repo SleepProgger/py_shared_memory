@@ -11,7 +11,7 @@ darwin_module = Extension('_posixshmem',
                     sources = ['posixshmem.c'])
 
 setup (name = 'shared-memory-backport',
-       version = '1.1.1',
+       version = '2.0.0',
        description = 'Simple backport of the multiprocessing.shared_memory module freshlay landed in python 3.8',
        py_modules = ['shared_memory'],
        ext_modules = [linux_module] if platform.system() == 'Linux' else [darwin_module] if platform.system() == 'Darwin' else []
